@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #0c0808;
+  position: relative; /* Required for ::before to work */
+  overflow: hidden;
+}
+
+/* Blurred background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('IMAGES/African8.jpg') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3px); /* Blur effect */
+  z-index: -1; /* Keep it behind the content */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  flex-wrap: wrap; /* Allow for wrapping on smaller screens */
+}
+
+.left-section {
+  width: 50%;
+  padding-right: 2rem;
+}
+
+.left-section h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0e0909;
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.right-section {
+  width: 40%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem; /* Added margin for small screen spacing */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem;
+  border: 2px solid #333;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.menu li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.social {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social .instagram-link {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social .instagram-link:hover {
+  color: #e4405f; /* Instagram pink color */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .left-section, .right-section {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .left-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    max-width: 100%;
+
+  }
+
+  .menu li a {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .social {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-section h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .menu li a {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .social .instagram-link {
+    font-size: 1.2rem;
+  }
+}
