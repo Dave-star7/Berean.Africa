@@ -15,9 +15,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('African8.jpg') no-repeat center center fixed;
+  background: url('download (1).jpeg') no-repeat center center fixed;
   background-size: cover;
-  filter: blur(3px); /* Blur effect */
+  filter: blur(10px); /* Blur effect */
   z-index: -1; /* Keep it behind the content */
 }
 
@@ -44,7 +44,7 @@ body::before {
 .subtitle {
   font-size: 1rem;
   line-height: 1.5;
-  color: #0e0909;
+  color: #000000;
   margin-top: 1rem;
   max-width: 500px;
 }
@@ -137,6 +137,7 @@ body::before {
   .subtitle {
     font-size: 0.8rem;
   }
+  
 
   .menu li a {
     font-size: 0.9rem;
