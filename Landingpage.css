@@ -116,7 +116,16 @@ body::before {
   .subtitle {
     font-size: 0.9rem;
     max-width: 100%;
+    margin-bottom: 1rem; /* Adjust spacing below the subtitle */
+  }
 
+  .right-section {
+    padding: 1rem;
+    margin-top: 0; /* Remove extra margin */
+  }
+
+  .menu {
+    margin-top: 0.5rem; /* Bring links closer to the subtitle */
   }
 
   .menu li a {
@@ -137,7 +146,14 @@ body::before {
   .subtitle {
     font-size: 0.8rem;
   }
-  
+
+  .right-section {
+    padding: 1rem;
+  }
+
+  .menu {
+    margin-top: 0.5rem; /* Bring links closer to the subtitle */
+  }
 
   .menu li a {
     font-size: 0.9rem;
