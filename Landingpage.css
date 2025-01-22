@@ -116,21 +116,21 @@ body::before {
   .subtitle {
     font-size: 0.9rem;
     max-width: 100%;
-    margin-bottom: 1rem; /* Adjust spacing below the subtitle */
+    margin-bottom: 0.5rem; /* Further reduce spacing below the subtitle */
   }
 
   .right-section {
     padding: 1rem;
-    margin-top: 0; /* Remove extra margin */
+    margin-top: -1rem; /* Pull the links section closer */
   }
 
   .menu {
-    margin-top: 0.5rem; /* Bring links closer to the subtitle */
+    margin-top: 0; /* Remove extra spacing */
   }
 
   .menu li a {
     font-size: 1rem;
-    padding: 0.7rem;
+    padding: 0.6rem;
   }
 
   .social {
@@ -145,19 +145,21 @@ body::before {
 
   .subtitle {
     font-size: 0.8rem;
+    margin-bottom: 0.3rem; /* Reduce spacing for smaller screens */
   }
 
   .right-section {
     padding: 1rem;
+    margin-top: -1.5rem; /* Pull links even closer */
   }
 
   .menu {
-    margin-top: 0.5rem; /* Bring links closer to the subtitle */
+    margin-top: 0; /* Ensure no additional spacing */
   }
 
   .menu li a {
     font-size: 0.9rem;
-    padding: 0.6rem;
+    padding: 0.5rem;
   }
 
   .social .instagram-link {
